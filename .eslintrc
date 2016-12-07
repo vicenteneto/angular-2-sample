@@ -1,5 +1,7 @@
 {
-  "strict": "global",
+  "rules": {
+    "strict": 2
+  },
   "globals": {
     // Angular
     "angular": false,

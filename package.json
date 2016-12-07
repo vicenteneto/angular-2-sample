@@ -16,6 +16,7 @@
     "karma-junit-reporter": "^0.4.1",
     "protractor": "^4.0.9",
     "gulp": "~3.9.1",
+    "gulp-eslint": "~3.0.1",
     "gulp-util": "~3.0.7",
     "wrench": "~1.5.9"
   },
