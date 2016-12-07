@@ -99,7 +99,6 @@ app/                    --> all of the source files for the application
     view2_test.js         --> tests of the controller
   app.js                --> main application module
   index.html            --> app layout file (the main html template file of the app)
-  index-async.html      --> just like index.html, but loads js files asynchronously
 karma.conf.js         --> config file for running unit tests with Karma
 e2e-tests/            --> end-to-end tests
   protractor-conf.js    --> Protractor config file
@@ -201,21 +200,6 @@ npm run update-deps
 This will call `npm update` and `bower update`, which in turn will find and install the latest
 versions that match the version ranges specified in the `package.json` and `bower.json` files
 respectively.
-
-
-## Loading Angular Asynchronously
-
-The `angular-seed` project supports loading the framework and application scripts asynchronously.
-The special `index-async.html` is designed to support this style of loading. For it to work you must
-inject a piece of Angular JavaScript into the HTML page. The project has a predefined script to help
-do this:
-
-```
-npm run update-index-async
-```
-
-This will copy the contents of the `angular-loader.js` library file into the `index-async.html`
-page. You can run this every time you update the version of Angular that you are using.
 
 
 ## Serving the Application Files
