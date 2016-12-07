@@ -11,7 +11,7 @@ gulp.task('lint', function () {
   return gulp.src([
     path.join(conf.paths.app, '/**/*.js'),
     path.join(conf.paths.e2e, '/**/*.js'),
-    '!app/bower_components/**'
+    '!bower_components/**'
   ])
     .pipe($.eslint())
     .pipe($.eslint.format('checkstyle', function (result) {

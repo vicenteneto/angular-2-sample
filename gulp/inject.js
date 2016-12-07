@@ -18,7 +18,7 @@ gulp.task('inject', function () {
   var injectScripts = gulp.src([
     path.join(conf.paths.app, '/app.js'),
     path.join(conf.paths.app, '/**/*.js'),
-    path.join('!' + conf.paths.app, '/bower_components/**')
+    path.join('!bower_components/**')
   ])
     .pipe($.angularFilesort()).on('error', conf.errorHandler('AngularFilesort'));
 

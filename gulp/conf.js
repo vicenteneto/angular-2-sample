@@ -24,7 +24,7 @@ exports.paths = {
  *  to inject css preprocessor deps and js files in karma
  */
 exports.wiredep = {
-  directory: 'app/bower_components'
+  directory: 'bower_components'
 };
 
 /**

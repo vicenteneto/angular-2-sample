@@ -1,7 +1,9 @@
 .idea/
-.tmp/
 
-node_modules/
+.tmp/
+dist/
+
 bower_components/
+node_modules/
 
 reports/

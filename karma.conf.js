@@ -2,14 +2,12 @@
 module.exports = function (config) {
   config.set({
 
-    basePath: './app',
-
     files: [
-      'bower_components/angular/angular.js',
-      'bower_components/angular-route/angular-route.js',
-      'bower_components/angular-mocks/angular-mocks.js',
-      'components/**/*.js',
-      'view*/**/*.js'
+      './bower_components/angular/angular.js',
+      './bower_components/angular-route/angular-route.js',
+      './bower_components/angular-mocks/angular-mocks.js',
+      './app/components/**/*.js',
+      './app/view*/**/*.js'
     ],
 
     autoWatch: true,
@@ -26,7 +24,7 @@ module.exports = function (config) {
     ],
 
     junitReporter: {
-      outputFile: 'test_out/unit.xml',
+      outputFile: 'reports/unit.xml',
       suite: 'unit'
     }
 
