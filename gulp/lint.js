@@ -3,7 +3,7 @@ var eslint = require('gulp-eslint');
 var fs = require('fs');
 
 gulp.task('lint', function () {
-  return gulp.src(['app/**/*.js', '!app/bower_components/**'])
+  return gulp.src(['app/**/*.js', 'e2e-tests/**/*.js', '!app/bower_components/**'])
     .pipe(eslint())
     .pipe(eslint.format('checkstyle', function (result) {
       fs.access('reports', fs.R_OK, function (err) {
